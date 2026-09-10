@@ -1,0 +1,13 @@
+class Solution {
+    public int[] shuffle(int[] nums, int n) {
+        int [] ans=new int[2*n];
+        int head=0;
+        int tial=n;
+        for(int i=0;i<2*n;i++){
+             ans[i++]=nums[head++];
+             
+             ans[i]=nums[tial++];
+        }
+        return ans;
+    }
+}
